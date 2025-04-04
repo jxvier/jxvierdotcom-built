@@ -475,3 +475,34 @@ img {
     font-size: 0.7rem;
   }
 }
+/* === Improve blog post readability without altering layout === */
+.post-content {
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 700px;
+  margin: 2rem auto;
+  color: #333;
+}
+
+/* Spacing for paragraphs and blockquotes */
+.post-content p {
+  margin-bottom: 1.3rem;
+}
+
+.post-content blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #ccc;
+  background-color: #f9f9f9;
+  font-style: italic;
+  color: #444;
+}
+
+/* Optional: improve heading hierarchy */
+.post-content h2,
+.post-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
