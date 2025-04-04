@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Javier&#39;s Blog</title>
+  <meta name="description" content="Get in touch with Javier">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/prism-theme.css">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✍️</text></svg>">
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+  <div class="header-content">
+    <div class="site-brand">
+      <a href="/" class="site-title">JXVIER.COM</a>
+      <div class="header-divider">TERMINAL BLOG INTERFACE v1.0</div>
+    </div>
+    
+    <nav class="site-nav">
+  <div class="nav-menu">
+    <span class="nav-item"><a href="/" >[HOME]</a></span>
+    <span class="nav-item"><a href="/blog/" >[BLOG]</a></span>
+    <span class="nav-item"><a href="/about/" >[ABOUT]</a></span>
+    <span class="nav-item"><a href="/contact/" aria-current="page">[CONTACT]</a></span>
+  </div>
+</nav>
+
+  </div>
+</header>
+
+    
+    <main>
+      <h1><a href="http://CONTACT.SH">CONTACT.SH</a></h1>
+<p>I'm always happy to hear from readers, whether you have questions, comments, or just want to say hello.</p>
+<h2>COMMUNICATION_CHANNELS</h2>
+<pre><code>EMAIL:   contact@jxvier.com
+GITHUB:  github.com/jxvier
+TWITTER: @jxvier
+</code></pre>
+<h2>SEND_MESSAGE.SH</h2>
+<pre><code class="language-bash"># Send a message
+echo &quot;Your message&quot; | mail -s &quot;Subject&quot; contact@jxvier.com
+</code></pre>
+<p>I try to respond to all messages within a couple of days. Looking forward to hearing from you!</p>
+
+    </main>
+    
+    <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-info">
+      <p class="footer-divider">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+      <p>$ echo "© 2025 JXVIER.COM"</p>
+    </div>
+    
+    <div class="footer-links">
+      <a href="/">[HOME]</a>
+      <a href="/blog/">[BLOG]</a>
+      <a href="/about/">[ABOUT]</a>
+      <a href="/contact/">[CONTACT]</a>
+    </div>
+    
+    <div class="footer-social">
+      <p>$ SSH LINKS:</p>
+      <div class="social-links">
+        <a href="https://twitter.com/yourhandle" aria-label="Twitter">twitter</a>
+        <a href="https://github.com/yourusername" aria-label="GitHub">github</a>
+        <a href="mailto:your-email@example.com" aria-label="Email">mail</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-prompt">
+    <span class="prompt-symbol">$</span> <span class="prompt-cursor">█</span>
+  </div>
+</footer>
+
+  </div>
+
+  <!-- Redirect to admin if user logs in -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

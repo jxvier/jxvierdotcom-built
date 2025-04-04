@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USING_THE_CMS.SH</title>
+  <meta name="description" content="How to use the Content Management System for this terminal-inspired blog">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/prism-theme.css">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✍️</text></svg>">
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+  <div class="header-content">
+    <div class="site-brand">
+      <a href="/" class="site-title">JXVIER.COM</a>
+      <div class="header-divider">TERMINAL BLOG INTERFACE v1.0</div>
+    </div>
+    
+    <nav class="site-nav">
+  <div class="nav-menu">
+    <span class="nav-item"><a href="/" >[HOME]</a></span>
+    <span class="nav-item"><a href="/blog/" aria-current="page">[BLOG]</a></span>
+    <span class="nav-item"><a href="/about/" >[ABOUT]</a></span>
+    <span class="nav-item"><a href="/contact/" >[CONTACT]</a></span>
+    <span class="nav-item"><a href="/admin/" class="admin-link">[ADMIN]</a></span>
+  </div>
+</nav>
+
+  </div>
+</header>
+
+    
+    <main>
+      
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">USING_THE_CMS.SH</h1>
+    
+    <div class="post-meta">
+      <time datetime="April 1, 2025">April 1, 2025</time>
+      <span class="reading-time">3 min read</span>
+      
+      
+      <div class="post-tags">
+        
+          
+        
+          
+            <a href="/tags/cms/" class="tag">#cms</a>
+          
+        
+          
+            <a href="/tags/tutorial/" class="tag">#tutorial</a>
+          
+        
+      </div>
+      
+    </div>
+  </header>
+
+  <div class="post-content">
+    <h1>USING_THE_CMS.SH</h1>
+<pre><code>$ ./admin.sh --help
+</code></pre>
+<p>This is a guide to using the built-in Content Management System (CMS) for the <a href="http://JXVIER.COM">JXVIER.COM</a> terminal blog. The CMS provides a user-friendly interface for creating and editing content without having to manually edit markdown files.</p>
+<h2>ACCESS_CMS.SH</h2>
+<p>The CMS is accessible at:</p>
+<pre><code>https://jxvier.com/admin/
+</code></pre>
+<p>You can also access it by clicking the [ADMIN] link in the main navigation.</p>
+<h2><a href="http://AUTHENTICATION.SH">AUTHENTICATION.SH</a></h2>
+<p>The CMS uses Netlify Identity for authentication. Only authorized users can access the admin panel. If you're the site owner, you'll need to:</p>
+<ol>
+<li>Log in with your Netlify account</li>
+<li>Set up Identity service for your site</li>
+<li>Invite yourself (and any other content editors) as users</li>
+</ol>
+<h2>CONTENT_TYPES.SH</h2>
+<p>The CMS is configured to manage:</p>
+<h3>Blog Posts</h3>
+<p>Create and edit blog posts in the terminal style:</p>
+<pre><code>Fields:
+- Title        // e.g., &quot;COMMAND_LINE_BASICS.SH&quot;
+- Description  // Brief summary of the post
+- Date         // Publication date
+- Tags         // Categories for the post
+- Body         // Main content in Markdown format
+</code></pre>
+<h3>Pages</h3>
+<p>Create and edit standalone pages:</p>
+<pre><code>Fields:
+- Title        // Page title
+- Description  // META description
+- Body         // Page content in Markdown
+- Menu Order   // Position in navigation (if applicable)
+- Permalink    // Custom URL path (optional)
+</code></pre>
+<h3>Site Configuration</h3>
+<p>Edit global site settings:</p>
+<pre><code>Fields:
+- Site Title    // &quot;JXVIER.COM&quot;
+- Description   // &quot;TERMINAL BLOG INTERFACE v1.0&quot;
+- Author        // Your name
+- Email         // Contact email
+- Social Media  // Links to profiles
+</code></pre>
+<h2>WRITING_CONTENT.SH</h2>
+<p>For the terminal aesthetic:</p>
+<ol>
+<li>Use ALL CAPS with underscores for section headings</li>
+<li>Add <code>.SH</code> extension to mimic shell commands</li>
+<li>Use code blocks liberally to show &quot;terminal output&quot;</li>
+<li>Maintain the monospace styling with proper code formatting</li>
+</ol>
+<p>Example heading:</p>
+<pre><code>## INSTALLATION_STEPS.SH
+</code></pre>
+<h2>MEDIA_UPLOADS.SH</h2>
+<p>You can upload images through the CMS:</p>
+<ol>
+<li>When editing content, click the image button</li>
+<li>Select or drag an image file</li>
+<li>The CMS will upload it to <code>/assets/uploads/</code></li>
+<li>The image will be optimized and available in your content</li>
+</ol>
+<h2>LOCAL_DEVELOPMENT.SH</h2>
+<p>When working locally, you'll need to:</p>
+<pre><code class="language-bash"># Start the 11ty development server
+npx @11ty/eleventy --serve
+
+# In another terminal, start the CMS proxy server
+npx netlify-cms-proxy-server
+</code></pre>
+<p>Then access the CMS at <a href="http://localhost:8080/admin/">http://localhost:8080/admin/</a></p>
+<h2><a href="http://DEPLOYMENT.SH">DEPLOYMENT.SH</a></h2>
+<p>Changes made in the CMS will be committed to your Git repository, triggering automatic deployments if you're using a CI/CD service like Netlify or GitHub Pages.</p>
+<pre><code>$ git push origin main
+&gt; Deploying changes...
+&gt; Site is now live at https://jxvier.com
+</code></pre>
+<hr>
+<p>Happy content editing in your terminal-inspired blog!</p>
+
+  </div>
+  
+  <footer class="post-footer">
+    <div class="post-navigation">
+      
+      <div class="post-nav-prev">
+        
+          <p>Previous</p>
+          <a href="/blog/terminal-design-choices/">DESIGN_CHOICES.TXT - Terminal Aesthetics for Modern Websites</a>
+        
+      </div>
+      
+      <div class="post-nav-next">
+        
+          <p>Next</p>
+          <a href="/blog/first-post/">Getting Started with 11ty</a>
+        
+      </div>
+    </div>
+  </footer>
+</article>
+
+    </main>
+    
+    <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-info">
+      <p class="footer-divider">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+      <p>$ echo "© 2025 JXVIER.COM"</p>
+    </div>
+    
+    <div class="footer-links">
+      <a href="/">[HOME]</a>
+      <a href="/blog/">[BLOG]</a>
+      <a href="/about/">[ABOUT]</a>
+      <a href="/contact/">[CONTACT]</a>
+    </div>
+    
+    <div class="footer-social">
+      <p>$ SSH LINKS:</p>
+      <div class="social-links">
+        <a href="https://twitter.com/yourhandle" aria-label="Twitter">twitter</a>
+        <a href="https://github.com/yourusername" aria-label="GitHub">github</a>
+        <a href="mailto:your-email@example.com" aria-label="Email">mail</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-prompt">
+    <span class="prompt-symbol">$</span> <span class="prompt-cursor">█</span>
+  </div>
+</footer>
+
+  </div>
+
+  <!-- Redirect to admin if user logs in -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESIGN_CHOICES.TXT - Terminal Aesthetics for Modern Websites</title>
+  <meta name="description" content="Exploring the appeal of terminal-inspired design and how I implemented it on this blog">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/prism-theme.css">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✍️</text></svg>">
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+  <div class="header-content">
+    <div class="site-brand">
+      <a href="/" class="site-title">JXVIER.COM</a>
+      <div class="header-divider">TERMINAL BLOG INTERFACE v1.0</div>
+    </div>
+    
+    <nav class="site-nav">
+  <div class="nav-menu">
+    <span class="nav-item"><a href="/" >[HOME]</a></span>
+    <span class="nav-item"><a href="/blog/" aria-current="page">[BLOG]</a></span>
+    <span class="nav-item"><a href="/about/" >[ABOUT]</a></span>
+    <span class="nav-item"><a href="/contact/" >[CONTACT]</a></span>
+  </div>
+</nav>
+
+  </div>
+</header>
+
+    
+    <main>
+      
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">DESIGN_CHOICES.TXT - Terminal Aesthetics for Modern Websites</h1>
+    
+    <div class="post-meta">
+      <time datetime="April 1, 2025">April 1, 2025</time>
+      <span class="reading-time">2 min read</span>
+      
+      
+      <div class="post-tags">
+        
+          
+            <a href="/tags/design/" class="tag">#design</a>
+          
+        
+          
+            <a href="/tags/terminal/" class="tag">#terminal</a>
+          
+        
+          
+            <a href="/tags/css/" class="tag">#css</a>
+          
+        
+          
+            <a href="/tags/aesthetics/" class="tag">#aesthetics</a>
+          
+        
+      </div>
+      
+    </div>
+  </header>
+
+  <div class="post-content">
+    <h1>DESIGN_CHOICES.TXT</h1>
+<p>There's something deeply appealing about terminal interfaces. Despite (or perhaps because of) their simplicity, they evoke a sense of nostalgia while simultaneously feeling contemporary and minimalist. In this post, I'll explore why I chose a terminal-inspired design for my personal blog and how I implemented it.</p>
+<h2>WHY_TERMINAL.SH</h2>
+<p>The decision to adopt a terminal aesthetic wasn't merely nostalgic—it was practical:</p>
+<ul>
+<li><strong>Focus on content</strong>: Without flashy distractions, readers can concentrate on the writing</li>
+<li><strong>Distinctive identity</strong>: In a world of template-based blogs, a terminal theme stands out</li>
+<li><strong>Technical alignment</strong>: As a developer, the terminal represents my daily workflow</li>
+<li><strong>Reduced design complexity</strong>: Fewer design decisions means more focus on writing</li>
+</ul>
+<p>The minimalist black text on white background with strategic pink accents creates a readable yet visually interesting experience that doesn't overwhelm.</p>
+<h2>IMPLEMENTATION.LOG</h2>
+<p>Bringing this design to life required careful attention to several key elements:</p>
+<pre><code class="language-css">body {
+  font-family: &quot;Courier New&quot;, monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #e83e8c;
+  text-decoration: none;
+  border-bottom: 1px dotted #e83e8c;
+}
+</code></pre>
+<h3>Core Design Elements</h3>
+<p>The terminal aesthetic relies on specific visual cues:</p>
+<ol>
+<li><strong>Monospace typography</strong>: Using fonts like Courier or Consolas throughout</li>
+<li><strong>Command-like headings</strong>: Formatting headings as terminal commands (e.g., <code>SECTION_NAME.SH</code>)</li>
+<li><strong>Square brackets</strong>: Using <code>[brackets]</code> for navigation elements</li>
+<li><strong>Strategic color use</strong>: Limited palette with pink accents (#e83e8c)</li>
+<li><strong>Black header bar</strong>: Replicating the terminal window appearance</li>
+</ol>
+<h2>USER_FEEDBACK.DAT</h2>
+<p>Initial feedback on the design has been positive. Users appreciate:</p>
+<ul>
+<li>The consistent visual language</li>
+<li>High readability despite the unique aesthetic</li>
+<li>Distinctiveness compared to typical blog designs</li>
+</ul>
+<p>One user commented: &quot;It feels like I'm reading something confidential from a sci-fi movie terminal.&quot;</p>
+<h2>NEXT_STEPS.SH</h2>
+<p>While I'm satisfied with the current implementation, I'm considering additional terminal-inspired elements:</p>
+<ul>
+<li>Animated cursor effects in certain sections</li>
+<li>Command-line style search functionality</li>
+<li>&quot;Directory listing&quot; style archive pages</li>
+<li>Syntax highlighting for code that matches terminal color schemes</li>
+</ul>
+<h2>CONCLUSION.TXT</h2>
+<p>A terminal-inspired design may not be appropriate for every website, but for a personal developer blog, it creates a distinctive experience that aligns with the content while standing out from the crowd.</p>
+<p>The key is implementing the aesthetic consistently while maintaining readability and usability. When done right, it creates a memorable experience that resonates with technically-minded visitors while remaining accessible to everyone.</p>
+<pre><code class="language-bash">echo &quot;Thanks for reading!&quot;
+exit 0
+</code></pre>
+
+  </div>
+  
+  <footer class="post-footer">
+    <div class="post-navigation">
+      
+      <div class="post-nav-prev">
+        
+          <p>Previous</p>
+          <a href="/blog/">BLOG | JXVIER.COM</a>
+        
+      </div>
+      
+      <div class="post-nav-next">
+        
+          <p>Next</p>
+          <a href="/blog/first-post/">Getting Started with 11ty</a>
+        
+      </div>
+    </div>
+  </footer>
+</article>
+
+    </main>
+    
+    <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-info">
+      <p class="footer-divider">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+      <p>$ echo "© 2025 JXVIER.COM"</p>
+    </div>
+    
+    <div class="footer-links">
+      <a href="/">[HOME]</a>
+      <a href="/blog/">[BLOG]</a>
+      <a href="/about/">[ABOUT]</a>
+      <a href="/contact/">[CONTACT]</a>
+    </div>
+    
+    <div class="footer-social">
+      <p>$ SSH LINKS:</p>
+      <div class="social-links">
+        <a href="https://twitter.com/yourhandle" aria-label="Twitter">twitter</a>
+        <a href="https://github.com/yourusername" aria-label="GitHub">github</a>
+        <a href="mailto:your-email@example.com" aria-label="Email">mail</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-prompt">
+    <span class="prompt-symbol">$</span> <span class="prompt-cursor">█</span>
+  </div>
+</footer>
+
+  </div>
+
+  <!-- Redirect to admin if user logs in -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

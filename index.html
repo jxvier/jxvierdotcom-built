@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JXVIER.COM</title>
+  <meta name="description" content="A terminal-inspired personal blog for code, ideas, and digital explorations">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/prism-theme.css">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✍️</text></svg>">
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+  <div class="header-content">
+    <div class="site-brand">
+      <a href="/" class="site-title">JXVIER.COM</a>
+      <div class="header-divider">TERMINAL BLOG INTERFACE v1.0</div>
+    </div>
+    
+    <nav class="site-nav">
+  <div class="nav-menu">
+    <span class="nav-item"><a href="/" aria-current="page">[HOME]</a></span>
+    <span class="nav-item"><a href="/blog/" >[BLOG]</a></span>
+    <span class="nav-item"><a href="/about/" >[ABOUT]</a></span>
+    <span class="nav-item"><a href="/contact/" >[CONTACT]</a></span>
+  </div>
+</nav>
+
+  </div>
+</header>
+
+    
+    <main>
+      <div class="home-header">
+  <h1>WELCOME.SH</h1>
+  <p class="subtitle">echo "A terminal-inspired personal blog for code, ideas, and digital explorations"</p>
+</div>
+<section class="recent-posts">
+  <h2>CAT RECENT_POSTS.LOG</h2>
+  <ul class="post-list">
+<p><li class="post-item"><br>
+<div class="post-item-header"><br>
+<span class="post-date-prefix">June 1, 2023</span><br>
+<a href="/blog/first-post/" class="post-link"><br>
+<h3 class="post-title">&gt; Getting Started with 11ty</h3><br>
+</a><br>
+</div><br>
+<p class="post-excerpt">$ My journey setting up this blog with the Eleventy static site generator</p><br>
+<div class="post-meta"></p>
+<p><div class="post-tags"></p>
+<p><span class="tag">--11ty</span></p>
+<p><span class="tag">--web development</span></p>
+<p><span class="tag">--blogging</span></p>
+<p></div></p>
+<p></div><br>
+</li></p>
+<p><li class="post-item"><br>
+<div class="post-item-header"><br>
+<span class="post-date-prefix">April 1, 2025</span><br>
+<a href="/blog/terminal-design-choices/" class="post-link"><br>
+<h3 class="post-title">&gt; DESIGN_CHOICES.TXT - Terminal Aesthetics for Modern Websites</h3><br>
+</a><br>
+</div><br>
+<p class="post-excerpt">$ Exploring the appeal of terminal-inspired design and how I implemented it on this blog</p><br>
+<div class="post-meta"></p>
+<p><div class="post-tags"></p>
+<p><span class="tag">--design</span></p>
+<p><span class="tag">--terminal</span></p>
+<p><span class="tag">--css</span></p>
+<p><span class="tag">--aesthetics</span></p>
+<p></div></p>
+<p></div><br>
+</li></p>
+<p><li class="post-item"><br>
+<div class="post-item-header"><br>
+<span class="post-date-prefix">April 1, 2025</span><br>
+<a href="/blog/" class="post-link"><br>
+<h3 class="post-title">&gt; BLOG | JXVIER.COM</h3><br>
+</a><br>
+</div><br>
+<p class="post-excerpt">$ Archive of all posts on jxvier.com</p><br>
+<div class="post-meta"></p>
+<p></div><br>
+</li></p>
+</ul>
+  <p class="all-posts-link"><a href="/blog/">cd ./blog →</a></p>
+</section>
+<section class="about-snippet">
+  <h2>WHOAMI</h2>
+  <p>I'm Javier, and this is my personal corner of the internet where I explore ideas through writing and code.</p>
+  <p><a href="/about/">cat ./about.md →</a></p>
+</section>
+
+    </main>
+    
+    <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-info">
+      <p class="footer-divider">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+      <p>$ echo "© 2025 JXVIER.COM"</p>
+    </div>
+    
+    <div class="footer-links">
+      <a href="/">[HOME]</a>
+      <a href="/blog/">[BLOG]</a>
+      <a href="/about/">[ABOUT]</a>
+      <a href="/contact/">[CONTACT]</a>
+    </div>
+    
+    <div class="footer-social">
+      <p>$ SSH LINKS:</p>
+      <div class="social-links">
+        <a href="https://twitter.com/yourhandle" aria-label="Twitter">twitter</a>
+        <a href="https://github.com/yourusername" aria-label="GitHub">github</a>
+        <a href="mailto:your-email@example.com" aria-label="Email">mail</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-prompt">
+    <span class="prompt-symbol">$</span> <span class="prompt-cursor">█</span>
+  </div>
+</footer>
+
+  </div>
+
+  <!-- Redirect to admin if user logs in -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

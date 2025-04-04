@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getting Started with 11ty</title>
+  <meta name="description" content="My journey setting up this blog with the Eleventy static site generator">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/prism-theme.css">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✍️</text></svg>">
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+  <div class="header-content">
+    <div class="site-brand">
+      <a href="/" class="site-title">JXVIER.COM</a>
+      <div class="header-divider">TERMINAL BLOG INTERFACE v1.0</div>
+    </div>
+    
+    <nav class="site-nav">
+  <div class="nav-menu">
+    <span class="nav-item"><a href="/" >[HOME]</a></span>
+    <span class="nav-item"><a href="/blog/" aria-current="page">[BLOG]</a></span>
+    <span class="nav-item"><a href="/about/" >[ABOUT]</a></span>
+    <span class="nav-item"><a href="/contact/" >[CONTACT]</a></span>
+  </div>
+</nav>
+
+  </div>
+</header>
+
+    
+    <main>
+      
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Getting Started with 11ty</h1>
+    
+    <div class="post-meta">
+      <time datetime="June 1, 2023">June 1, 2023</time>
+      <span class="reading-time">2 min read</span>
+      
+      
+      <div class="post-tags">
+        
+          
+            <a href="/tags/11ty/" class="tag">#11ty</a>
+          
+        
+          
+            <a href="/tags/web-development/" class="tag">#web development</a>
+          
+        
+          
+            <a href="/tags/blogging/" class="tag">#blogging</a>
+          
+        
+      </div>
+      
+    </div>
+  </header>
+
+  <div class="post-content">
+    <h1>Getting Started with 11ty</h1>
+<p>I recently decided to start a personal blog and chose <a href="https://www.11ty.dev/">11ty (Eleventy)</a> as my static site generator. In this post, I'll walk through my experience setting it up and why I think it's a great choice for a personal blog.</p>
+<h2>Why 11ty?</h2>
+<p>11ty offers several advantages that made it appealing for my blog:</p>
+<ul>
+<li><strong>Simplicity</strong>: It's straightforward to set up and has minimal configuration</li>
+<li><strong>Flexibility</strong>: Works with multiple template languages</li>
+<li><strong>Speed</strong>: Generates static sites quickly and efficiently</li>
+<li><strong>No client-side JavaScript required</strong>: Results in fast, lightweight sites</li>
+</ul>
+<h2>The Setup Process</h2>
+<p>Getting started with 11ty was surprisingly easy. Here are the basic steps I followed:</p>
+<ol>
+<li>Installed 11ty via npm</li>
+<li>Created a basic configuration file</li>
+<li>Set up my folder structure for templates and content</li>
+<li>Added some basic styling</li>
+</ol>
+<p>The most challenging part was deciding on the structure for my blog posts and how to organize the templates.</p>
+<h2>Using Markdown for Content</h2>
+<p>One of the things I love about 11ty is how easy it makes writing content in Markdown. I can focus on writing without worrying about HTML markup, while still having the flexibility to add custom HTML when needed.</p>
+<pre><code class="language-markdown">---
+title: My Amazing Post
+date: 2023-05-15
+---
+
+# Here's my content
+
+Writing in Markdown is *so* convenient!
+</code></pre>
+
+  </div>
+  
+  <footer class="post-footer">
+    <div class="post-navigation">
+      
+      <div class="post-nav-prev">
+        
+          <p>Previous</p>
+          <a href="/blog/terminal-design-choices/">DESIGN_CHOICES.TXT - Terminal Aesthetics for Modern Websites</a>
+        
+      </div>
+      
+      <div class="post-nav-next">
+        
+      </div>
+    </div>
+  </footer>
+</article>
+
+    </main>
+    
+    <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-info">
+      <p class="footer-divider">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+      <p>$ echo "© 2025 JXVIER.COM"</p>
+    </div>
+    
+    <div class="footer-links">
+      <a href="/">[HOME]</a>
+      <a href="/blog/">[BLOG]</a>
+      <a href="/about/">[ABOUT]</a>
+      <a href="/contact/">[CONTACT]</a>
+    </div>
+    
+    <div class="footer-social">
+      <p>$ SSH LINKS:</p>
+      <div class="social-links">
+        <a href="https://twitter.com/yourhandle" aria-label="Twitter">twitter</a>
+        <a href="https://github.com/yourusername" aria-label="GitHub">github</a>
+        <a href="mailto:your-email@example.com" aria-label="Email">mail</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-prompt">
+    <span class="prompt-symbol">$</span> <span class="prompt-cursor">█</span>
+  </div>
+</footer>
+
+  </div>
+
+  <!-- Redirect to admin if user logs in -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>
